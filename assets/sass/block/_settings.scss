@@ -1,0 +1,38 @@
+#settings {
+
+    .settings__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+    }
+
+    .setting__boxes {
+        display: flex;
+        gap: 30px;
+    }
+
+    .settings__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 350px;
+        padding: 42px 27px;
+        border-radius: 8px;
+        background: #F3F3F3;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url(../svg/settings.svg);
+            width: 106px;
+            height: 106px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            margin-bottom: 37px;
+        }
+    }
+}

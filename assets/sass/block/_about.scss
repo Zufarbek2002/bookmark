@@ -1,0 +1,28 @@
+#about {
+    margin: 150px 0;
+
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 80px;
+    }
+
+    .about__boxes {
+        display: flex;
+        gap: 30px;
+    }
+
+    .about__box {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 350px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about__img {
+        width: 180px;
+    }
+}

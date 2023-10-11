@@ -1,0 +1,35 @@
+.header {
+    margin: 56px 0;
+
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header__link {
+        color: #828282;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+
+    .header__ul {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+
+    .header__item_link {
+        color: #828282;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 1.5px;
+    }
+
+    .header__btn {
+        width: 98px;
+    }
+}
