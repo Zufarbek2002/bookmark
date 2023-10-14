@@ -10,6 +10,11 @@
     .setting__boxes {
         display: flex;
         gap: 30px;
+
+        @media (max-width: 800px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     .settings__box {
@@ -21,6 +26,11 @@
         padding: 42px 27px;
         border-radius: 8px;
         background: #F3F3F3;
+
+        @media (max-width: 400px) {
+            width: 100%;
+            padding: 34px 20px;
+        }
 
         &::before {
             content: "";

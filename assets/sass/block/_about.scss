@@ -11,6 +11,12 @@
     .about__boxes {
         display: flex;
         gap: 30px;
+
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 70px;
+        }
     }
 
     .about__box {
@@ -20,6 +26,11 @@
         width: 350px;
         align-items: center;
         text-align: center;
+
+        @media (max-width: 400px) {
+            width: 95%;
+            row-gap: 15px;
+        }
     }
 
     .about__img {

@@ -10,6 +10,11 @@
     .option__slider_boxes {
         display: flex;
 
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+        }
     }
 
     .option__slider_box {
@@ -18,6 +23,13 @@
         text-align: center;
         padding-bottom: 31px;
         position: relative;
+
+        @media (max-width: 800px) {
+            width: 400px;
+        }
+        @media (max-width: 440px) {
+            width: 311px;
+        }
     }
 
     .option__link {
@@ -29,7 +41,7 @@
         letter-spacing: 1.5px;
     }
 
-    .option__slider_box--active::after{
+    .option__slider_box--active::after {
         content: "";
         display: inline-block;
         width: 100%;
@@ -40,7 +52,21 @@
         left: 0;
     }
 
-    .option__btn{
+    .option__btn {
         width: 160px;
+    }
+
+    .option__text_boxes {
+
+        @media (max-width: 1180px) {
+            width: 95%;
+        }
+    }
+
+    .option__img{
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
     }
 }

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 html{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -43,6 +42,13 @@ img{
     display: flex;
     align-items: center;
     gap: 94px;
+
+    @media (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .same__text_box {
@@ -50,6 +56,10 @@ img{
     flex-direction: column;
     row-gap: 25px;
     width: 635px;
+
+    @media (max-width: 700px) {
+        width: 95%;
+    }
 }
 
 .same__h1 {
@@ -57,6 +67,10 @@ img{
     font-size: 42px;
     font-weight: 700;
     line-height: 48px;
+
+    @media (max-width: 500px) {
+        font-size: 32px;
+    }
 }
 
 .same__p {
@@ -64,6 +78,10 @@ img{
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
+
+    @media (max-width: 500px) {
+        font-size: 15px;
+    }
 }
 
 .same__h2 {
@@ -71,6 +89,10 @@ img{
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
+
+    @media (max-width: 500px) {
+        font-size: 22px;
+    }
 }
 
 .btn{
@@ -100,4 +122,8 @@ img{
     row-gap: 16px;
     width: 676px;
     text-align: center;
+
+    @media (max-width: 800px) {
+        width: 95%;
+    }
 }

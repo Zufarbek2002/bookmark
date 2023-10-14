@@ -1,13 +1,46 @@
 #hero {
-    margin: 108px 0 150px;
+    margin: 216px 0 150px;
+
+    .hero__text_box{
+
+        @media (max-width: 960px) {
+            order: 2;
+        }
+        @media (max-width: 500px) {
+            row-gap: 15px;
+        }
+    }
+
+    .hero__h1{
+
+        @media (max-width: 370px) {
+            font-size: 32px;
+        }
+    }
 
     .hero__btn_boxes {
         display: flex;
         gap: 20px;
         margin-top: 14px;
+
+        @media (max-width: 960px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 540px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .hero__btn {
         width: 212px;
+    }
+
+    .hero__img{
+
+        @media (max-width: 400px) {
+            width: 95%;
+        }
     }
 }
